@@ -6,13 +6,33 @@ describe('user input parser', function() {
   describe('user provides correct options', function() {
     it('returns the object containing translation data', function(){
       var userOpts = {
-        _: ['en', 'es', 'cowboy']
+        _: ['en', 'es', 'cowboy'],
+        t: true,
+        s: true
       };
 
       var parsedOpts = parser(userOpts);
-      expect(parsedOpts.src).to.eq('en');
-      expect(parsedOpts.target).to.eq('es');
+      expect(parsedOpts.from).to.eq('en');
+      expect(parsedOpts.to).to.eq('es');
       expect(parsedOpts.text).to.eq('cowboy');
+      expect(parsedOpts.speak).to.eq(true);
+      expect(parsedOpts.synonyms).to.eq(true);
+
+      expect(parsedOpts.text).to.eq('cowboy');
+
+      //text in brackets
+      userOpts = {
+        _: ['en', 'es', 'cowboy where are u?']
+      };
+      parsedOpts = parser(userOpts);
+      expect(parsedOpts.text).to.eq('cowboy where are u?');
+
+      //text without brackets
+      userOpts = {
+        _: ['en', 'es', 'cowboy', 'where', 'are', 'u?']
+      };
+      parsedOpts = parser(userOpts);
+      expect(parsedOpts.text).to.eq('cowboy where are u?');
     });
   });
 
