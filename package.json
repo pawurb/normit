@@ -1,0 +1,25 @@
+{
+  "name": "normit",
+  "version": "0.0.1",
+  "description": "Google Translate with speech synthesis in your terminal.",
+  "main": "index.js",
+  "bin": {
+    "normit": "normit.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://pawurb@bitbucket.org/pawurb/normit.git"
+  },
+  "keywords": [
+    "translate",
+    "google",
+    "cli",
+    "translator",
+    "termit"
+  ],
+  "author": "pawurb",
+  "license": "MIT"
+}
