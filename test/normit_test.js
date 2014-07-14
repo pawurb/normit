@@ -1,7 +1,21 @@
 var expect = require("chai").expect;
 
-describe('math works', function() {
-  it('really works', function(){
-    expect(4+5).to.not.equal(10);
+describe('user input parser', function() {
+  var parser = require("./../lib/normit").parser;
+
+  describe('user provides correct options', function() {
+    it('returns the object containing translation data', function(){
+      var userOptions = {
+        _: ['en', 'es', 'cowboy']
+      }
+
+      expect(parser(userOptions)).to.eq(userOptions._);
+    });
+  });
+
+  describe('user provides incorrect options', function() {
+    it('returns raises error', function(){
+        // expect(parser()).to.eq('dupa dwa');
+    });
   });
 });
