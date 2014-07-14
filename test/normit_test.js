@@ -38,7 +38,16 @@ describe('user input parser', function() {
 
   describe('user provides incorrect options', function() {
     it('returns raises error', function(){
-        // expect(parser()).to.eq('dupa dwa');
+      var wrongOpts = {
+        _: ['po', 'polski', 'cowboy'],
+        t: true,
+        s: true
+      };
+
+      var incorrectParsing = function() {
+        parser(wrongOpts);
+      };
+      expect(incorrectParsing).to.throw(Error);
     });
   });
 });
