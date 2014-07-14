@@ -5,11 +5,14 @@ describe('user input parser', function() {
 
   describe('user provides correct options', function() {
     it('returns the object containing translation data', function(){
-      var userOptions = {
+      var userOpts = {
         _: ['en', 'es', 'cowboy']
-      }
+      };
 
-      expect(parser(userOptions)).to.eq(userOptions._);
+      var parsedOpts = parser(userOpts);
+      expect(parsedOpts.src).to.eq('en');
+      expect(parsedOpts.target).to.eq('es');
+      expect(parsedOpts.text).to.eq('cowboy');
     });
   });
 
