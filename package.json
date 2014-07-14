@@ -21,5 +21,8 @@
     "termit"
   ],
   "author": "pawurb",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.9.1"
+  }
 }
