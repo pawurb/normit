@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "description": "Google Translate with speech synthesis in your terminal.",
   "main": "./lib/main.js",
-  "bin": {
-     "./bin/normit"
-  },
+  "bin": "./bin/normit",
   "scripts": {
     "test": "gulp test"
   },
