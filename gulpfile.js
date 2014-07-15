@@ -4,6 +4,7 @@ var jshint = require('gulp-jshint');
 var mocha  = require('gulp-mocha');
 
 gulp.task('default', function() {
+  gulp.start('lint', 'test');
   gulp.watch(['lib/*.js', 'test/*js'], ['lint', 'test'])
 });
 

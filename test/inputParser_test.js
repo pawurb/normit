@@ -39,7 +39,7 @@ describe('user input parser', function() {
   });
 
   describe('user provides incorrect options', function() {
-    it('returns raises error', function(){
+    it('raises error', function(){
       var wrongOpts = {
         _: ['po', 'polski', 'cowboy'],
         t: true,
@@ -50,6 +50,7 @@ describe('user input parser', function() {
         parser(wrongOpts);
       };
       expect(incorrectParsing).to.throw();
+      //TODO add test for empty input - display help
     });
   });
 });
