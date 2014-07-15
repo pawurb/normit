@@ -1,7 +1,7 @@
 var expect = require("chai").expect;
 
 describe('user input parser', function() {
-  var parser = require("./../lib/normit").parser;
+  var parser = require("./../lib/inputParser").parse;
 
   describe('user provides correct options', function() {
     it('returns the object containing translation data', function(){
@@ -33,6 +33,8 @@ describe('user input parser', function() {
       };
       parsedOpts = parser(userOpts);
       expect(parsedOpts.text).to.eq('cowboy where are u?');
+      expect(parsedOpts.speak).to.eq(false);
+      expect(parsedOpts.synonyms).to.eq(false);
     });
   });
 

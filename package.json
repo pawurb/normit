@@ -2,8 +2,10 @@
   "name": "normit",
   "version": "0.0.1",
   "description": "Google Translate with speech synthesis in your terminal.",
-  "main": "./lib/main.js",
-  "bin": "./bin/normit",
+  "main": "./lib/normit.js",
+  "bin": {
+    "normit": "./bin/normit"
+  },
   "scripts": {
     "test": "gulp test"
   },
@@ -26,7 +28,7 @@
     "gulp-watch": "^0.6.8",
     "gulp-mocha": "^0.5.1",
     "gulp-jshint": "^1.7.1",
-    "optimist": "^0.6.1",
-    "sugar": "^1.4.1"
+    "sugar": "^1.4.1",
+    "minimist": "^0.2.0"
   }
 }
