@@ -29,6 +29,8 @@
     "gulp-mocha": "^0.5.1",
     "gulp-jshint": "^1.7.1",
     "sugar": "^1.4.1",
-    "minimist": "^0.2.0"
+    "minimist": "^0.2.0",
+    "nock": "^0.42.1",
+    "request": "^2.37.0"
   }
 }
