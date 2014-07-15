@@ -1,7 +1,7 @@
 var expect = require("chai").expect;
 
 describe('url constructor', function() {
-  var constructor = require("./../lib/urlConstructor").parse;
+  var constructor = require("./../lib/urlConstructor");
 
   describe('speak flag set to true', function() {
     var options = {
