@@ -4,7 +4,7 @@
   "description": "Google Translate with speech synthesis in your terminal.",
   "main": "./lib/main.js",
   "bin": {
-    "normit": "normit.js"
+     "./bin/normit"
   },
   "scripts": {
     "test": "gulp test"
