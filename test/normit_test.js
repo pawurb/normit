@@ -47,7 +47,7 @@ describe('user input parser', function() {
       var incorrectParsing = function() {
         parser(wrongOpts);
       };
-      expect(incorrectParsing).to.throw(Error);
+      expect(incorrectParsing).to.throw();
     });
   });
 });
