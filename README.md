@@ -1,7 +1,7 @@
 #Normit [![Build Status](https://travis-ci.org/pawurb/normit.png)](https://travis-ci.org/pawurb/normit) [![NPM version](https://badge.fury.io/js/normit.svg)](http://badge.fury.io/js/normit) [![Coverage Status](https://coveralls.io/repos/pawurb/normit/badge.png)](https://coveralls.io/r/pawurb/normit)
 
 
-Normit is an easy way to use Google Translate in your terminal.
+Normit is an easy way to use Google Translate in your terminal.  Check out its ruby gem version [termit](https://github.com/pawurb/termit) !
 
 ## Installation
 ```bash
@@ -85,6 +85,11 @@ For Ubuntu:
 For MacOSX:
 
     brew install mpg123
+    
+## Status
+
+This my first node project. All code quality regarding PRs are more than welcome :)
+
 
 
 
