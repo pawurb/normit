@@ -12,6 +12,7 @@ if(argv.h) {
   return;
 }
 
-var options = require(lib+'/inputParser.js').parse(argv);
-console.log(options);
+var options = require(lib+'/inputParser').parse(argv);
 
+var translator = require(lib+'/translator');
+translator.run(options);
