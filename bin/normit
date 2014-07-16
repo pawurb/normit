@@ -12,6 +12,11 @@ if(argv.h) {
   return;
 }
 
+if(argv.v) {
+  console.log('Normit ' + pkg.version);
+  return;
+}
+
 if(argv._.length < 3) {
   console.log(pkg.wrongParamsMsg);
   return;
