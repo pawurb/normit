@@ -5,14 +5,26 @@ var path = require('path');
 var fs = require('fs');
 var lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
 var argv = require('minimist')(process.argv.slice(2));
+var pkg = require('./../package.json');
 
 if(argv.h) {
-  var pkg = require('./../package.json');
   console.log(pkg.helpMessage);
   return;
 }
 
-var options = require(lib+'/inputParser').parse(argv);
+if(argv._.length < 3) {
+  console.log(pkg.wrongParamsMsg);
+  return;
+}
+
+try {
+  var options = require(lib+'/inputParser').parse(argv);
+} catch(err) {
+  if(err.message === 'wrong_lang_code') {
+    console.log(pkg.wrongParamsMsg);
+    return;
+  }
+}
 
 var translator = require(lib+'/translator');
 translator.run(options);
