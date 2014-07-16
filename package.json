@@ -23,18 +23,28 @@
     "translator",
     "termit"
   ],
-  "author": "pawurb",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [ "bin", "lib" ],
+  "author": {
+    "name": "pawurb",
+    "email": "p.urbanek89@gmail.com",
+    "url": "github.com/pawurb"
+  },
   "license": "MIT",
+  "dependencies" : {
+    "sugar": "^1.4.1",
+    "minimist": "^0.2.0",
+    "nock": "^0.42.1",
+    "request": "^2.37.0",
+    "q": "^1.0.1"
+  },
   "devDependencies": {
     "chai": "^1.9.1",
     "gulp": "^3.8.6",
     "gulp-watch": "^0.6.8",
     "gulp-mocha": "^0.5.1",
     "gulp-jshint": "^1.7.1",
-    "sugar": "^1.4.1",
-    "minimist": "^0.2.0",
-    "nock": "^0.42.1",
-    "request": "^2.37.0",
-    "q": "^1.0.1"
   }
 }
