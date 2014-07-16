@@ -7,7 +7,7 @@ describe('textResponseHandler', function() {
   var rawResponse = fs.readFileSync('./test/fixtures/rawTextResponse', 'utf8');
 
   it('extracts translated word', function(){
-    expect(handler.word(rawResponse)).to.eq('burro');
+    expect(handler.text(rawResponse)).to.eq('burro');
   });
 
   it('extracts the list of synonyms', function(){
