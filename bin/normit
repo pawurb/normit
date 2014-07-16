@@ -4,8 +4,14 @@
 var path = require('path');
 var fs = require('fs');
 var lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
-
 var argv = require('minimist')(process.argv.slice(2));
+
+if(argv.h) {
+  var pkg = require('./../package.json');
+  console.log(pkg.helpMessage);
+  return;
+}
+
 var options = require(lib+'/inputParser.js').parse(argv);
 console.log(options);
 
