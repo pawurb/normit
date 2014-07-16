@@ -1,10 +1,10 @@
 {
   "name": "normit",
-  "version": "0.9.1",
+  "version": "1.0.1",
   "description": "Google Translate with speech synthesis in your terminal.",
-  "helpMessage" : "=========NORMIT=========\nUsage:\nnormit 'source_language' 'target_language' 'text'\n\nExample: normit en fr 'hey cowboy where is your horse?'\n=> 'hey cow-boy ou est votre cheval?'\n\nOptions:\n-t - speech synthesis\n-s - synonyms list\n\nCheck docs at: github.com/pawurb/normit",
-  "noPlayerMsg" : "Normit speech synthesis requires mpg123 installed.\nPlease run 'brew install mpg123'",
-  "wrongParamsMsg" :"NORMIT: Wrong data. Example: 'normit en es the cowboy' => 'el vaquero'",
+  "helpMessage": "=========NORMIT=========\nUsage:\nnormit 'source_language' 'target_language' 'text'\n\nExample: normit en fr 'hey cowboy where is your horse?'\n=> 'hey cow-boy ou est votre cheval?'\n\nOptions:\n-t - speech synthesis\n-s - synonyms list\n\nCheck docs at: github.com/pawurb/normit",
+  "noPlayerMsg": "Normit speech synthesis requires mpg123 installed.\nPlease run 'brew install mpg123'",
+  "wrongParamsMsg": "NORMIT: Wrong data. Example: 'normit en es the cowboy' => 'el vaquero'",
   "main": "./lib/translator.js",
   "bin": {
     "normit": "./bin/normit"
@@ -26,14 +26,17 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "files": [ "bin", "lib" ],
+  "files": [
+    "bin",
+    "lib"
+  ],
   "author": {
     "name": "pawurb",
     "email": "p.urbanek89@gmail.com",
     "url": "github.com/pawurb"
   },
   "license": "MIT",
-  "dependencies" : {
+  "dependencies": {
     "sugar": "^1.4.1",
     "minimist": "^0.2.0",
     "nock": "^0.42.1",
@@ -45,6 +48,7 @@
     "gulp": "^3.8.6",
     "gulp-watch": "^0.6.8",
     "gulp-mocha": "^0.5.1",
-    "gulp-jshint": "^1.7.1"
+    "gulp-jshint": "^1.7.1",
+    "mocha": "^1.20.1"
   }
 }
