@@ -37,7 +37,7 @@ normit en zh "hey cowboy where is your horse?" -t
 => "嘿，牛仔是你的马在哪里？" # and a chinese voice says something about a horse
 ```
 
-You can use termit as a speech synthesizer of any supported language without having to translate anything:
+You can use normit as a speech synthesizer of any supported language without having to translate anything:
 ``` bash
 normit en en "hold your horses cowboy !" -t
 => "hold your horses cowboy !" # and an english voice asks you to hold on
