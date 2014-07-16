@@ -5,7 +5,7 @@ Normit is an easy way to use Google Translate in your terminal.  Check out its r
 
 ## Installation
 ```bash
-gem install normit
+npm install normit -g
 ```
 
 ## Usage
