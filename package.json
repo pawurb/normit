@@ -7,7 +7,7 @@
     "normit": "./bin/normit"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
