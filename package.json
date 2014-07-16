@@ -10,7 +10,7 @@
     "normit": "./bin/normit"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "./node_modules/mocha/bin/mocha test"
   },
   "repository": {
     "type": "git",
