@@ -1,7 +1,7 @@
 #Normit [![Build Status](https://travis-ci.org/pawurb/normit.png)](https://travis-ci.org/pawurb/normit) [![NPM version](https://badge.fury.io/js/normit.svg)](http://badge.fury.io/js/normit)
 
 
-Normit is an easy way to use Google Translate in your terminal.  Check out its ruby gem version [termit](https://github.com/pawurb/termit) !
+Normit is an easy way to use Google Translate in your terminal.  Check out its ruby gem version [termit](https://github.com/pawurb/termit)
 
 ## Installation
 ```bash
