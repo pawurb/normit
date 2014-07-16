@@ -9,7 +9,7 @@ describe('dataFetcher', function() {
   });
 
   it('fetches the correct data', function(){
-    fetcher.fetch('http://target-url.com/data', 'text').then(function(err, res, body) {
+    fetcher.fetch('http://target-url.com/data', 'text', 'utf8').then(function(err, res, body) {
         expect(body).to.eq('correct data');
       }
     );
