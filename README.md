@@ -76,6 +76,8 @@ To find all available language codes visit www.translate.google.com. Choose lang
 
 ## Requirements
 
+Works with node 0.10.0 and higher.
+
 To use speech synthesis you need to have mpg123 installed.
 
 For Ubuntu:
