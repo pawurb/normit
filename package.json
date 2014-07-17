@@ -1,6 +1,6 @@
 {
   "name": "normit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Google Translate with speech synthesis in your terminal.",
   "helpMessage": "=========NORMIT=========\nUsage:\nnormit 'source_language' 'target_language' 'text'\n\nExample: normit en fr 'hey cowboy where is your horse?'\n=> 'hey cow-boy ou est votre cheval?'\n\nOptions:\n-t - speech synthesis\n-s - synonyms list\n\nCheck docs at: github.com/pawurb/normit",
   "noPlayerMsg": "Normit speech synthesis requires mpg123 installed.\nPlease run 'brew install mpg123'",
@@ -24,7 +24,7 @@
     "termit"
   ],
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
   },
   "files": [
     "bin",
@@ -37,18 +37,18 @@
   },
   "license": "MIT",
   "dependencies": {
-    "sugar": "^1.4.1",
-    "minimist": "^0.2.0",
-    "nock": "^0.42.1",
-    "request": "^2.37.0",
-    "q": "^1.0.1"
+    "sugar": "1.4.x",
+    "minimist": "0.2.x",
+    "nock": "0.42.x",
+    "request": "2.37.x",
+    "q": "1.0.x"
   },
   "devDependencies": {
-    "chai": "^1.9.1",
-    "mocha": "^1.20.1",
-    "gulp": "^3.8.6",
-    "gulp-watch": "^0.6.8",
-    "gulp-mocha": "^0.5.1",
-    "gulp-jshint": "^1.7.1"
+    "chai": "1.9.x",
+    "mocha": "1.20.x",
+    "gulp": "3.8.x",
+    "gulp-watch": "0.6.x",
+    "gulp-mocha": "0.5.x",
+    "gulp-jshint": "1.7.x"
   }
 }
