@@ -37,11 +37,13 @@
   },
   "license": "MIT",
   "dependencies": {
-    "sugar": "1.4.x",
+    "coveralls": "^2.11.x",
     "minimist": "0.2.x",
+    "mocha-lcov-reporter": "0.0.1",
     "nock": "0.42.x",
+    "q": "1.0.x",
     "request": "2.37.x",
-    "q": "1.0.x"
+    "sugar": "1.4.x"
   },
   "devDependencies": {
     "chai": "1.9.x",
