@@ -67,7 +67,6 @@ git(){[[ "$@" = commit\ -m* ]]&&normit en $LANG ${${@:$#}//./} -t;command git $@
 * polish - pl
 * french - fr
 * spanish - es
-* slovakian - sk
 * chinese - zh
 * russian - ru
 * automatic source language detection - auto
@@ -87,7 +86,7 @@ For Ubuntu:
 For MacOSX:
 
     brew install mpg123
-    
+
 ## Status
 
 This my first node project. All code quality regarding PRs are more than welcome :)
