@@ -7,7 +7,8 @@
     "normit": "./bin/normit"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test"
+    "test": "./node_modules/mocha/bin/mocha test",
+    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -34,7 +35,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "coveralls": "^2.11.x",
+    "coveralls": "2.11.x",
+    "istanbul": "^0.3.0",
     "minimist": "0.2.x",
     "mocha-lcov-reporter": "0.0.1",
     "nock": "0.42.x",
