@@ -1,0 +1,5 @@
+{
+  "help" : "=========NORMIT=========\nUsage:\nnormit 'source_language' 'target_language' 'text'\n\nExample: normit en fr 'hey cowboy where is your horse?'\n=> 'hey cow-boy ou est votre cheval?'\n\nOptions:\n-t - speech synthesis\n-s - synonyms list\n\nCheck docs at: github.com/pawurb/normit",
+  "noPlayer" : "Normit speech synthesis requires mpg123 installed.\nPlease run 'brew install mpg123'",
+  "wrongParams" : "NORMIT: Wrong data. Example: 'normit en es the cowboy' => 'el vaquero'"
+}

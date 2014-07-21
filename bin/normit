@@ -6,9 +6,10 @@ var fs = require('fs');
 var lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
 var argv = require('minimist')(process.argv.slice(2));
 var pkg = require('./../package.json');
+var messages = require('./../lib/messages.json');
 
 if(argv.h || argv._.length === 0) {
-  console.log(pkg.helpMessage);
+  console.log(messages.help);
   return;
 }
 
@@ -18,7 +19,7 @@ if(argv.v) {
 }
 
 if(argv._.length < 3) {
-  console.log(pkg.wrongParamsMsg);
+  console.log(messages.wrongParams);
   return;
 }
 
@@ -26,7 +27,7 @@ try {
   var options = require(lib+'/inputParser').parse(argv);
 } catch(err) {
   if(err.message === 'wrong_lang_code') {
-    console.log(pkg.wrongParamsMsg);
+    console.log(messages.wrongParams);
     return;
   }
 }
