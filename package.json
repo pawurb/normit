@@ -37,7 +37,7 @@
   "license": "MIT",
   "dependencies": {
     "coveralls": "2.11.x",
-    "istanbul": "^0.3.0",
+    "istanbul": "0.3.x",
     "minimist": "0.2.x",
     "mocha-lcov-reporter": "0.0.1",
     "nock": "0.42.x",
@@ -51,6 +51,7 @@
     "gulp": "3.8.x",
     "gulp-watch": "0.6.x",
     "gulp-mocha": "0.5.x",
-    "gulp-jshint": "1.7.x"
+    "gulp-jshint": "1.7.x",
+    "sinon": "1.10.x"
   }
 }

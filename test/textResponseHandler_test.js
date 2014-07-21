@@ -1,5 +1,4 @@
 var expect = require("chai").expect;
-var nock = require('nock');
 var fs = require('fs');
 
 describe('textResponseHandler', function() {
