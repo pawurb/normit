@@ -11,20 +11,26 @@ describe('translator', function() {
     from: 'en',
     to: 'es',
     text: 'donkey',
-    speak: false,
-    synonyms: false
+    speak: true,
+    synonyms: true
   };
 
   before(function() {
     var googleResponse = fs.readFileSync('./test/fixtures/rawTextResponse', 'utf8');
     nock('http://translate.google.com').post('/translate_a/t?client=t&sl=en&tl=es&hl=pl&sc=2&ie=UTF-8&oe=UTF-8&prev=enter&ssel=0&tsel=0&')
     .reply(200, googleResponse);
+
+    nock('http://translate.google.com').post('/translate_tts?tl=es&ie=UTF-8&oe=UTF-8')
+    .reply(200, '');
+
     sinon.spy(console, 'log');
   });
 
-  it('works', function(){
+  it('works', function(done){
     tr.run(options).then(function() {
       expect(console.log).to.have.been.calledWith('=> burro');
+      expect(console.log).to.have.been.calledWith('=> Synonyms: burro, asno, borrico, pollino, estúpido');
+      done();
     });
   });
 });
