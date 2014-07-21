@@ -52,6 +52,7 @@
     "gulp-watch": "0.6.x",
     "gulp-mocha": "0.5.x",
     "gulp-jshint": "1.7.x",
-    "sinon": "1.10.x"
+    "sinon": "1.10.x",
+    "sinon-chai": "2.5.x"
   }
 }
