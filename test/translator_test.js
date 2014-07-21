@@ -26,11 +26,10 @@ describe('translator', function() {
     sinon.spy(console, 'log');
   });
 
-  it('works', function(done){
+  it('works', function(){
     tr.run(options).then(function() {
       expect(console.log).to.have.been.calledWith('=> burro');
       expect(console.log).to.have.been.calledWith('=> Synonyms: burro, asno, borrico, pollino, estúpido');
-      done();
     });
   });
 });
