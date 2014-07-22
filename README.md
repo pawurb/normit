@@ -87,11 +87,6 @@ For MacOSX:
 
     brew install mpg123
 
-## Status
-
-This my first node project. All code quality regarding PRs are more than welcome :)
-
-
 
 
 
