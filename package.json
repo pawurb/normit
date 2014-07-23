@@ -1,6 +1,6 @@
 {
   "name": "normit",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Google Translate with speech synthesis in your terminal.",
   "main": "./lib/translator.js",
   "bin": {
