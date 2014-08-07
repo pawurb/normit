@@ -9,12 +9,12 @@ gulp.task('default', function() {
 });
 
 gulp.task('lint', function() {
-  return gulp.src(['./lib/*.js', './test/*.js'])
+  gulp.src(['./lib/*.js', './test/*.js'])
   .pipe(jshint())
   .pipe(jshint.reporter('default'));
 });
 
 gulp.task('test', function () {
-  return gulp.src('./test/*_test.js', {read: false})
+  gulp.src('./test/*_test.js', {read: false})
   .pipe(mocha({reporter: 'nyan'}));
 });
