@@ -59,6 +59,7 @@ In **~/.zshrc**
 export LANG=es
 git(){[[ "$@" = commit\ -m* ]]&&normit en $LANG ${${@:$#}//./} -t;command git $@}
 ```
+I am no shell ninja so if you know how to make it work in bash then please submit a PR.
 
 
 ## Language codes:
