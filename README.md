@@ -2,6 +2,11 @@
 
 
 Normit is an easy way to use Google Translate in your terminal.
+
+## Status
+
+It stopped working recently. The Google People must have messed something up in their APIs. I do not have time to fix it now, so PR's are welcome.
+
 ## Installation
 ```bash
 npm install normit -g
