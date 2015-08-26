@@ -13,7 +13,7 @@ describe('urlConstructor', function() {
 
     it('returns correct url', function(){
       var url = constructor.url(options);
-      expect(url).to.eq('http://translate.google.com/translate_tts?tl=es&ie=UTF-8&oe=UTF-8');
+      expect(url).to.eq('https://translate.google.com/translate_tts?ie=UTF-8&tl=es&total=1&idx=0&textlen=5&tk=735012&client=t');
     });
   });
 
@@ -27,7 +27,7 @@ describe('urlConstructor', function() {
 
     it('returns correct url', function(){
       var url = constructor.url(options);
-      expect(url).to.eq('http://translate.google.com/translate_a/t?client=t&sl=en&tl=es&hl=pl&sc=2&ie=UTF-8&oe=UTF-8&prev=enter&ssel=0&tsel=0&');
+      expect(url).to.eq('https://translate.google.com/translate_a/single?client=t&sl=en&tl=es&hl=pl&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&dt=t&dt=at&ie=UTF-8&oe=UTF-8&otf=2&srcrom=1&ssel=3&tsel=6&kc=2&tk=522578');
     });
   });
 });
