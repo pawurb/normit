@@ -1,7 +1,10 @@
 #Normit [![Build Status](https://travis-ci.org/pawurb/normit.png)](https://travis-ci.org/pawurb/normit) [![NPM version](https://badge.fury.io/js/normit.svg)](http://badge.fury.io/js/normit) [![Coverage Status](https://coveralls.io/repos/pawurb/normit/badge.png?branch=master)](https://coveralls.io/r/pawurb/normit?branch=master)
 
-
 Normit is an easy way to use Google Translate in your terminal.
+
+## Status
+
+Looks like Google blocked the APIs needed for it to work and project is no longer functional.
 
 ## Installation
 ```bash
