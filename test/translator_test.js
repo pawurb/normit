@@ -4,6 +4,7 @@ var fs = require('fs');
 var sinon = require('sinon');
 chai.use(require('sinon-chai'));
 var expect = chai.expect;
+const HOST = 'https://www.bing.com';
 
 describe('translator', function() {
   var tr = require("./../lib/translator");
@@ -15,11 +16,18 @@ describe('translator', function() {
   };
 
   before(function() {
-    var googleResponse = fs.readFileSync('./test/fixtures/rawTextResponse', 'utf8');
-    nock('http://translate.google.com').post('/translate_a/t?client=t&sl=en&tl=es&hl=pl&sc=2&ie=UTF-8&oe=UTF-8&prev=enter&ssel=0&tsel=0&')
-    .reply(200, googleResponse);
+    nock(HOST).get('/translator')
+    .reply(200, '',
+      {
+       'set-cookie': 'dummy_cookie'
+      }
+    );
 
-    nock('http://translate.google.com').post('/translate_tts?tl=es&ie=UTF-8&oe=UTF-8')
+    var translatedResponse = fs.readFileSync('./test/fixtures/rawTextResponse', 'utf8');
+    nock(HOST).post('/translator/api/Translate/TranslateArray?from=en&to=es')
+    .reply(200, translatedResponse);
+
+    nock(HOST).post('/translator/api/language/Speak?locale=es-ES&gender=female&media=audio/mp3&text=burro')
     .reply(200, '');
 
     sinon.spy(console, 'log');
