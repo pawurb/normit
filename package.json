@@ -1,6 +1,6 @@
 {
   "name": "normit",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Google Translate with speech synthesis in your terminal.",
   "main": "./lib/translator.js",
   "bin": {
@@ -23,7 +23,7 @@
     "termit"
   ],
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4.0.0"
   },
   "files": [
     "bin",
@@ -38,8 +38,7 @@
   "dependencies": {
     "minimist": "0.2.x",
     "q": "1.0.x",
-    "request": "2.37.x",
-    "sugar": "1.4.x"
+    "request": "2.37.x"
   },
   "devDependencies": {
     "coveralls": "2.11.x",
