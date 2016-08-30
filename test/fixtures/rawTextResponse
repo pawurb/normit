@@ -1,1 +1,11 @@
-[[["burro","donkey","",""]],[["rzeczownik",["burro","asno","borrico","pollino","estúpido"],[["burro",["donkey","burro","ass","jackass","dunce","sawhorse"],[19116],0.47236654,"el"],["asno",["ass","donkey","jackass"],[19116],0.14183016,"el"],["borrico",["donkey"],,0.0070613078,"el"],["pollino",["donkey","idiot"],,0.0053301547,"el"],["estúpido",["idiot","bonehead","donkey","coot","stupe","blunderhead"],,0.00019720831,"el"]],"donkey",1]],"en",,[["burro",[1],true,false,998,0,1,0]],[["donkey",1,[["burro",998,true,false],["asno",1,true,false],["burra",0,true,false],["del burro",0,true,false],["donkey",0,true,false]],[[0,6]],"donkey"]],,,[],2]
+{
+  "from": "pl",
+  "to": "en",
+  "items": [
+    {
+      "id": "81493155",
+      "text": "Ass",
+      "wordAlignment": "0:4-0:2"
+    }
+  ]
+}

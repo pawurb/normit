@@ -11,8 +11,7 @@ describe('translator', function() {
     from: 'en',
     to: 'es',
     text: 'donkey',
-    speak: true,
-    synonyms: true
+    speak: true
   };
 
   before(function() {
@@ -29,7 +28,6 @@ describe('translator', function() {
   it('works', function(){
     tr.run(options).then(function() {
       expect(console.log).to.have.been.calledWith('=> burro');
-      expect(console.log).to.have.been.calledWith('=> Synonyms: burro, asno, borrico, pollino, estúpido');
     });
   });
 });

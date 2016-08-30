@@ -7,8 +7,7 @@ describe('user input parser', function() {
     it('returns the object containing translation data', function(){
       var userOpts = {
         _: ['en', 'es', 'cowboy'],
-        t: true,
-        s: true
+        t: true
       };
 
       var parsedOpts = parser(userOpts);
@@ -16,7 +15,6 @@ describe('user input parser', function() {
       expect(parsedOpts.to).to.eq('es');
       expect(parsedOpts.text).to.eq('cowboy');
       expect(parsedOpts.speak).to.eq(true);
-      expect(parsedOpts.synonyms).to.eq(true);
 
       expect(parsedOpts.text).to.eq('cowboy');
 
@@ -34,7 +32,6 @@ describe('user input parser', function() {
       parsedOpts = parser(userOpts);
       expect(parsedOpts.text).to.eq('cowboy where are u?');
       expect(parsedOpts.speak).to.eq(false);
-      expect(parsedOpts.synonyms).to.eq(false);
     });
   });
 
@@ -42,8 +39,7 @@ describe('user input parser', function() {
     it('raises error', function(){
       var wrongOpts = {
         _: ['po', 'polski', 'cowboy'],
-        t: true,
-        s: true
+        t: true
       };
 
       var incorrectParsing = function() {

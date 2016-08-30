@@ -1,10 +1,6 @@
 #Normit [![Build Status](https://travis-ci.org/pawurb/normit.png)](https://travis-ci.org/pawurb/normit) [![NPM version](https://badge.fury.io/js/normit.svg)](http://badge.fury.io/js/normit) [![Coverage Status](https://coveralls.io/repos/pawurb/normit/badge.png?branch=master)](https://coveralls.io/r/pawurb/normit?branch=master)
 
-Normit is an easy way to use Google Translate in your terminal.
-
-## Status
-
-Looks like Google blocked the APIs needed for it to work and project is no longer functional.
+Normit is an easy way to translate stuff in your terminal. You can check out its Ruby gem version [termit](https://github.com/pawurb/termit).
 
 ## Installation
 ```bash
@@ -46,15 +42,6 @@ normit en en "hold your horses cowboy !" -t
 => "hold your horses cowboy !" # and an english voice asks you to hold on
 ```
 
-#### Synonyms
-
-Specify a **-s** (synonyms) flag to get the list of synonyms if available:
-``` bash
-normit es en muchacho -s
-=> boy
-=> Synonyms: boy, lad, youngster, laddie, cully
-```
-
 #### Learning language when committing to git (zsh only)
 Idea by [Nedomas](https://news.ycombinator.com/item?id=7545747) . See and hear your messages translated to target lang every time you commit:
 
@@ -65,17 +52,9 @@ git(){[[ "$@" = commit\ -m* ]]&&normit en $LANG ${${@:$#}//./} -t;command git $@
 ```
 I am no shell ninja so if you know how to make it work in bash then please submit a PR.
 
-
 ## Language codes:
-* english - en
-* polish - pl
-* french - fr
-* spanish - es
-* chinese - zh
-* russian - ru
-* automatic source language detection - auto
 
-To find all available language codes visit https://developers.google.com/translate/v2/using_rest#language-params.
+To find all available language codes visit https://msdn.microsoft.com/en-us/library/hh456380.aspx
 
 ## Requirements
 
@@ -91,6 +70,10 @@ For MacOSX:
 
     brew install mpg123
 
+## Status
 
+It was rewritten to work with [Bing Translator](https://www.bing.com/translator) . Thanks to [Ragnarson](https://ragnarson.com) for supporting it !
 
+## Disclaimer
 
+Normit works by scraping the private APIs and is therefore not recommended for use in production or on a large scale.
