@@ -38,7 +38,7 @@ describe('user input parser', function() {
   describe('user provides incorrect options', function() {
     it('raises error', function(){
       var wrongOpts = {
-        _: ['po', 'polski', 'cowboy'],
+        _: ['po', 'polskiego', 'cowboy'],
         t: true
       };
 

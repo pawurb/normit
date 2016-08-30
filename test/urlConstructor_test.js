@@ -14,7 +14,7 @@ describe('urlConstructor', function() {
 
     it('returns correct url', function(){
       var url = constructor.url(options);
-      expect(url).to.eq('https://www.bing.com/translator/api/language/Speak?locale=es-ES&gender=male&media=audio/mp3&text=Hey%20vaquero');
+      expect(url).to.eq('https://www.bing.com/translator/api/language/Speak?locale=es-ES&gender=female&media=audio/mp3&text=Hey%20vaquero');
     });
   });
 
