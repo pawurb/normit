@@ -25,7 +25,7 @@ normit fr en "qui est votre papa?"
 
 Parenthesis are not necessary for text data input:
 ```bash
-normit fr ru qui est votre papa?
+normit fr ru qui est votre papa
 => "Кто твой папочка?"
 ```
 #### Speech synthesis
