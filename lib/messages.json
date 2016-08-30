@@ -3,5 +3,6 @@
   "noPlayerMac" : "NORMIT: speech synthesis requires mpg123 installed.\nPlease run 'brew install mpg123'",
   "noPlayerOther" : "NORMIT: speech synthesis requires mpg123 installed.\nPlease run 'apt-get install mpg123'",
   "wrongParams" : "NORMIT: Wrong data. Example: 'normit en es the cowboy' => 'el vaquero'",
-  "connectionErr" : "NORMIT: There seems to be a problem with your internet connection"
+  "connectionErr" : "NORMIT: There seems to be a problem with your internet connection, or the language codes you provided are invalid",
+  "cannotSpeak": "NORMIT: Speech synthesis is not supported for this language."
 }
