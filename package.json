@@ -36,6 +36,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "baconjs": "^0.7.85",
     "minimist": "0.2.x",
     "q": "1.0.x",
     "request": "2.37.x"
