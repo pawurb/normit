@@ -70,6 +70,7 @@ For MacOSX:
 
     brew install mpg123
 
+For Windows: [Download Site](https://www.mpg123.de/download.shtml) or  [Direct Download mpg123-1.24.0-x86-64.zip](https://www.mpg123.de/download/win64/1.24.0/mpg123-1.24.0-x86-64.zip)
 ## Status
 
 It was rewritten to work with [Bing Translator](https://www.bing.com/translator) . Thanks to [Ragnarson](https://ragnarson.com) for supporting it !
